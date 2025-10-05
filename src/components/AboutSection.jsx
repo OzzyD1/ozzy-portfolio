@@ -1,23 +1,18 @@
 const SOCIAL_LINKS = [
     {
         id: 1,
-        name: "LinkedIn",
-        url: "#",
+        name: "CV",
+        url: "public/assets/documents/CV.pdf",
     },
     {
         id: 2,
-        name: "CV",
-        url: "#",
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/ozzyd/",
     },
     {
         id: 3,
-        name: "Behance",
-        url: "#",
-    },
-    {
-        id: 4,
         name: "Github",
-        url: "#",
+        url: "https://github.com/OzzyD1",
     },
 ];
 
@@ -35,7 +30,7 @@ function AboutSection() {
                     {/* Left Column - Bio */}
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-3xl md:text-4xl font-bold mb-2">
+                            <h3 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-2">
                                 Ozzy Domarkas
                             </h3>
                             <p className="text-lg italic text-gray-600 mb-2">
@@ -48,23 +43,25 @@ function AboutSection() {
 
                         <div className="space-y-4 text-base leading-relaxed">
                             <p>
-                                I'm a{" "}
-                                <strong>multidisciplinary creative</strong>{" "}
-                                working across visual, audio, and code.
+                                I’m a{" "}
+                                <strong>multidisciplinary creative</strong> who
+                                works across visual, audio, and code but what
+                                drives me most is emotion.
                             </p>
 
                             <p>
-                                My projects range from interactive short films
-                                and motion design explainers to music production
-                                and web development. I thrive on combining
-                                technical precision with creative expression.
+                                I build things that feel alive, from interactive
+                                short films and motion design explainers to
+                                music production and web experiences. Every
+                                project is an attempt to capture a feeling, a
+                                rhythm, or a moment.
                             </p>
 
                             <p>
-                                Whether I'm building an interactive experience,
-                                designing motion graphics, or coding a web app,
-                                my focus is always the same: clarity, impact,
-                                and a strong sense of craft.
+                                Whether I’m shaping sound, crafting visuals, or
+                                writing code, my goal is the same: to make
+                                something that connects, not just functions —
+                                something with clarity, impact, and a pulse.
                             </p>
                         </div>
 

@@ -66,7 +66,7 @@ export const synapseProject = {
         </div>
     `,
     links: {
-        demo: "#",
-        github: "#",
+        demo: "https://www.ozzyd.me/synapse-interactive-story/",
+        github: "https://github.com/OzzyD1/synapse-interactive-story",
     },
 };

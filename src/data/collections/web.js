@@ -3,65 +3,75 @@ export const webCollection = {
     title: "Web",
     description: "Web Development & Design",
     overview: `
-        <p>Web projects that blend <strong>functionality with aesthetics</strong>. From React applications to custom WordPress themes, each project is built with performance and user experience in mind.</p>
-        <p>I specialize in <em>modern JavaScript frameworks</em> and <em>responsive design</em> principles, always focusing on clean code and optimal performance.</p>
-        <p>My web development philosophy: <strong>Fast, accessible, and beautiful</strong>.</p>
+        <p>I create <strong>bold, emotive websites</strong> that don't just function—they feel. Each project is designed to evoke emotion and create memorable experiences that connect with users on a deeper level.</p>
+        <p>My approach combines <em>striking visual design</em> with <em>thoughtful user experience</em>, crafting digital spaces that are both beautiful and purposeful. I believe the best websites tell stories and make people feel something.</p>
     `,
     details: `
+        <h3 class="text-xl font-bold mb-3">Design Philosophy</h3>
+        <ul class="space-y-2 mb-6">
+            <li>• <strong>Emotion First:</strong> Every design decision serves the emotional narrative</li>
+            <li>• <strong>Bold Aesthetics:</strong> Strong typography, striking color palettes, and compelling layouts</li>
+            <li>• <strong>Storytelling:</strong> Websites that guide users through meaningful journeys</li>
+            <li>• <strong>Performance Focused:</strong> Beautiful designs that load fast and work flawlessly</li>
+        </ul>
+        
         <h3 class="text-xl font-bold mb-3">Technical Stack</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
-                <h4 class="font-bold mb-2">Frontend</h4>
+                <h4 class="font-bold mb-2">Design & Frontend</h4>
                 <ul class="space-y-1">
-                    <li>• React & Next.js</li>
-                    <li>• Vue.js & Nuxt.js</li>
-                    <li>• Tailwind CSS</li>
-                    <li>• TypeScript</li>
+                    <li>• React</li>
+                    <li>• Framer Motion</li>
+                    <li>• Tailwind CSS & Styled Components</li>
+                    <li>• Figma & Adobe Creative Suite</li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-2">Backend & Tools</h4>
+                <h4 class="font-bold mb-2">Development & Tools</h4>
                 <ul class="space-y-1">
-                    <li>• Node.js & Express</li>
-                    <li>• MongoDB & PostgreSQL</li>
-                    <li>• Vite & Webpack</li>
-                    <li>• Git & GitHub Actions</li>
+                    <li>• JavaScript</li>
+                    <li>• WordPress</li>
+                    <li>• SEO</li>
+                    <li>• Responsive & Mobile-First Design</li>
                 </ul>
             </div>
         </div>
         
-        <h3 class="text-xl font-bold mb-3">Featured Projects</h3>
+        <h3 class="text-xl font-bold mb-3">Featured Work</h3>
         <ul class="space-y-2">
-            <li>• <strong>Chris's Portfolio</strong> - Photography portfolio with custom CMS</li>
-            <li>• <strong>E-commerce Platform</strong> - Full-stack React application</li>
-            <li>• <strong>Company Website</strong> - Corporate site with headless CMS</li>
-            <li>• <strong>Web App Dashboard</strong> - Data visualization interface</li>
+            <li>• <strong>Artist Portfolio</strong> - Immersive gallery experience with bold animations</li>
+            <li>• <strong>Creative Agency Site</strong> - Emotion-driven storytelling with striking visuals</li>
+            <li>• <strong>Personal Brand Site</strong> - Minimalist design with powerful typography</li>
+            <li>• <strong>Event Landing Page</strong> - High-impact design focused on conversion</li>
         </ul>
+        
+        <h3 class="text-xl font-bold mb-3 mt-6">Approach</h3>
+        <p>I start every project by understanding the emotion we want to evoke. From there, I craft visual narratives using <strong>bold typography</strong>, <strong>strategic color theory</strong>, and <strong>purposeful animations</strong> to create websites that don't just inform—they inspire, engage, and move people to action.</p>
     `,
     gallery: `
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="aspect-video bg-gray-300 border-4 border-black relative">
                 <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
                 <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Portfolio Website]
+                    [Bold Artist Portfolio Homepage]
                 </div>
             </div>
             <div class="aspect-video bg-gray-300 border-4 border-black relative">
                 <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
                 <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [E-commerce Site]
+                    [Emotive Agency Landing Page]
                 </div>
             </div>
             <div class="aspect-video bg-gray-300 border-4 border-black relative">
                 <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
                 <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Dashboard Interface]
+                    [Typography & Color Study]
                 </div>
             </div>
-            <div class="aspect-video bg-gray-300 border-4 border-black relative md:col-span-3">
+            <div class="aspect-video bg-gray-300 border-4 border-black relative">
                 <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
                 <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Responsive Design Showcase]
+                    [Mobile-First Design System]
                 </div>
             </div>
         </div>

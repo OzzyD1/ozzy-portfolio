@@ -6,7 +6,7 @@ export const supplyChainProject = {
         <p>A corporate explainer video created to educate internal teams and external stakeholders about how <strong>global disruptions impact the company's supply chain operations</strong>. This project demonstrates the intricate nature of international logistics and their direct business implications.</p>
         <p>Developed as a <em>strategic communication tool</em> to help leadership, clients, and partners understand supply chain vulnerabilities and adaptive solutions in real-time.</p>
     `,
-    year: "2023",
+    year: "2024",
     role: "Creative Lead, Business Analyst, Visual Designer",
     technologies: [
         "After Effects",
