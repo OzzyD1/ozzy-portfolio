@@ -1,72 +1,102 @@
+import { useModal } from "../hooks/useModal";
+import Modal from "./Modal";
+
 const PROJECTS = [
     {
         id: 1,
+        contentId: "synapse",
         title: "SYNAPSE",
         description: "INTERACTIVE SHORT STORY | FOURTH YEAR PROJECT",
-        gridClass: "lg:col-span-1",
+        gridClass: "lg:col-span-3",
     },
     {
         id: 2,
+        contentId: "supply-chain",
         title: "SUPPLY CHAIN",
         description: "ANIMATED EXPLAINER | MAP VISUALISATION",
         gridClass: "lg:col-span-2",
     },
-    {
-        id: 3,
-        title: "CHRIS'S WEBSITE",
-        description: "CLIENT PROJECT | WEB DEVELOPMENT",
-        gridClass: "lg:col-span-1",
-    },
+    // {
+    //     id: 3,
+    //     contentId: "chris-website",
+    //     title: "CHRIS'S WEBSITE",
+    //     description: "CLIENT PROJECT | WEB DEVELOPMENT",
+    //     gridClass: "lg:col-span-1",
+    // },
     {
         id: 4,
+        contentId: "andrew-film",
         title: "A DAY IN THE LIFE OF ANDREW",
         description: "DIRECTING | EDITING | VFX",
         gridClass: "lg:col-span-1",
     },
-    {
-        id: 5,
-        title: "SHOWREEL",
-        description: "MOTION DESIGN | AFTER EFFECTS",
-        gridClass: "lg:col-span-1",
-    },
+    // {
+    //     id: 5,
+    //     contentId: "showreel",
+    //     title: "SHOWREEL",
+    //     description: "MOTION DESIGN | AFTER EFFECTS",
+    //     gridClass: "lg:col-span-1",
+    // },
 ];
 
 function FeaturedSection() {
-    return (
-        <section className="min-h-screen bg-white text-black px-6 py-12">
-            <div className="max-w-7xl mx-auto">
-                {/* Section Header */}
-                <h2 className="text-2xl md:text-3xl font-bold mb-12 tracking-wider">
-                    {">"} FEATURED
-                </h2>
+    const { isOpen, content, type, openProject, close } = useModal();
 
-                {/* Projects Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {PROJECTS.map((project, index) => (
-                        <div key={project.id} className={project.gridClass}>
-                            <ProjectCard
-                                project={project}
-                                className={
-                                    index < 2 ? "h-80 md:h-96" : "h-64 md:h-80"
-                                }
-                            />
-                        </div>
-                    ))}
+    return (
+        <>
+            <section className="min-h-screen bg-white text-black px-6 py-12">
+                <div className="max-w-7xl mx-auto">
+                    {/* Section Header */}
+                    <h2 className="text-2xl md:text-3xl font-bold mb-12 tracking-wider">
+                        {">"} FEATURED
+                    </h2>
+
+                    {/* Projects Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {PROJECTS.map((project) => (
+                            <div key={project.id} className={project.gridClass}>
+                                <ProjectCard
+                                    project={project}
+                                    className={
+                                        project.gridClass === "lg:col-span-3"
+                                            ? "h-80 md:h-96"
+                                            : "h-64 md:h-80"
+                                    }
+                                    onClick={() =>
+                                        openProject(project.contentId)
+                                    }
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <Modal
+                content={content}
+                isOpen={isOpen}
+                onClose={close}
+                type={type}
+            />
+        </>
     );
 }
 
-function ProjectCard({ project, className }) {
+function ProjectCard({ project, className, onClick }) {
     return (
         <div
             className={`
-            relative border-4 border-black bg-white cursor-pointer
-            transition-all duration-200 group
-            hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]
-            ${className}
-        `}
+                relative border-4 border-black bg-white cursor-pointer
+                transition-all duration-200 group
+                hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]
+                focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2
+                ${className}
+            `}
+            onClick={onClick}
+            onKeyDown={(e) => e.key === "Enter" && onClick()}
+            tabIndex={0}
+            role="button"
+            aria-label={`View ${project.title} project details`}
         >
             <div className="absolute -bottom-2 -right-2 w-full h-full bg-black -z-10" />
 

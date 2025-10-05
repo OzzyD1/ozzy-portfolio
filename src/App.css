@@ -16,3 +16,28 @@ body {
 #root {
     min-height: 100vh;
 }
+
+/* Custom focus styles for better accessibility */
+.focus\:ring-black:focus {
+    --tw-ring-color: #585564;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
