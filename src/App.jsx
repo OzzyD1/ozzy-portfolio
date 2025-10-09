@@ -1,7 +1,7 @@
-import HeroSection from "./components/HeroSection";
-import FeaturedSection from "./components/FeaturedSection";
-import CollectionsSection from "./components/CollectionsSection";
-import AboutSection from "./components/AboutSection";
+import HeroSection from "./pages/HeroSection";
+import FeaturedSection from "./pages/FeaturedSection";
+import CollectionsSection from "./pages/CollectionsSection";
+import AboutSection from "./pages/AboutSection";
 
 function App() {
     return (

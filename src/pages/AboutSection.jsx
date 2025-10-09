@@ -2,7 +2,7 @@ const SOCIAL_LINKS = [
     {
         id: 1,
         name: "CV",
-        url: "public/assets/documents/CV.pdf",
+        url: "#",
     },
     {
         id: 2,

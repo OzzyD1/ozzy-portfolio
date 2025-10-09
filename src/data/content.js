@@ -1,7 +1,6 @@
 // Import individual project files
 import { synapseProject } from "./projects/synapse.js";
 import { supplyChainProject } from "./projects/supply-chain.js";
-import { chrisWebsiteProject } from "./projects/chris-website.js";
 import { andrewFilmProject } from "./projects/andrew-film.js";
 import { showreelProject } from "./projects/showreel.js";
 
@@ -15,7 +14,6 @@ import { audioCollection } from "./collections/audio.js";
 export const PROJECTS = {
     synapse: synapseProject,
     "supply-chain": supplyChainProject,
-    "chris-website": chrisWebsiteProject,
     "andrew-film": andrewFilmProject,
     showreel: showreelProject,
 };

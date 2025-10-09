@@ -1,5 +1,5 @@
 import { useModal } from "../hooks/useModal";
-import Modal from "./Modal";
+import Modal from "../components/Modal";
 
 const COLLECTIONS = [
     {
