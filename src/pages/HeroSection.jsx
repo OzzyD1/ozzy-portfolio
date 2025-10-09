@@ -3,26 +3,46 @@ import TypingAnimation from "../components/TypingAnimation";
 const TYPING_WORDS = ["EXPERIENCES", "STORIES", "IMPRESSIONS", "SOLUTIONS"];
 
 function HeroSection() {
+    const scrollToFeatured = () => {
+        const el = document.querySelector('[data-section="featured"]');
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+
     return (
-        <div className="min-h-screen flex flex-col">
-            <main className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-                <div className="space-y-8">
+        <div className="min-h-screen relative overflow-hidden bg-white text-black">
+            <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center relative">
+                {/* Top label */}
+                <div className="tracking-widest text-xs md:text-sm uppercase mb-6 opacity-80">
+                    [ portfolio ]
+                </div>
+
+                {/* Name + underline block */}
+                <div className="space-y-6">
                     <div>
-                        <h1 className="text-8xl md:text-9xl lg:text-[8rem] mb-4">
+                        <h1 className="mb-3 text-7xl md:text-8xl lg:text-[7.5rem] leading-none">
                             <span className="font-light tracking-tighter">
-                                I'M{" "}
+                                I&apos;M{" "}
                             </span>
-                            <span className="font-bold tracking-wider">
+                            <span className="font-extrabold tracking-tight">
                                 OZZY DOMARKAS
                             </span>
                         </h1>
-                        <p className="text-2xl md:text-3xl lg:text-4xl tracking-tighter">
-                            A Multi-Disciplinary Designer
+
+                        {/* Memphis underline */}
+                        <div className="mx-auto mt-4 flex items-center justify-center gap-2">
+                            <div className="h-1 w-24 bg-black" />
+                            <div className="h-1 w-6 bg-black rotate-45" />
+                            <div className="h-1 w-24 bg-black" />
+                        </div>
+
+                        <p className="mt-6 text-xl md:text-2xl lg:text-3xl tracking-widest uppercase">
+                            A Multi‑Disciplinary Designer
                         </p>
                     </div>
 
-                    <div className="pt-12">
-                        <div className="text-3xl md:text-4xl lg:text-5xl">
+                    {/* Typing */}
+                    <div className="pt-10">
+                        <div className="text-2xl md:text-3xl lg:text-4xl">
                             <TypingAnimation
                                 staticPrefix="> I CREATE "
                                 textArray={TYPING_WORDS}
@@ -33,6 +53,42 @@ function HeroSection() {
                     </div>
                 </div>
             </main>
+
+            {/* Subtle up/down animation keyframes */}
+            <style>{`
+                @keyframes arrow-float {
+                    0% { transform: translateY(0); }
+                    50% { transform: translateY(-6px); }
+                    100% { transform: translateY(0); }
+                }
+            `}</style>
+
+            {/* Down arrow (solid, no shaft) with subtle float */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+                <div
+                    style={{
+                        animation: "arrow-float 3s ease-in-out infinite",
+                    }}
+                    className="will-change-transform"
+                >
+                    <button
+                        onClick={scrollToFeatured}
+                        aria-label="Scroll to featured projects"
+                        className="w-8 h-8 focus:outline-none hover:-translate-y-1 transition-transform duration-200"
+                        style={{ WebkitTapHighlightColor: "transparent" }}
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            className="w-full h-full"
+                            role="img"
+                            aria-hidden="true"
+                        >
+                            {/* Solid triangle pointing down */}
+                            <path d="M12 18L3 6h18L12 18z" fill="black" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }

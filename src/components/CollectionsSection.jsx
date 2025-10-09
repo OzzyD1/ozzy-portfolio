@@ -1,5 +1,5 @@
 import { useModal } from "../hooks/useModal";
-import Modal from "../components/Modal";
+import Modal from "./Modal";
 
 const COLLECTIONS = [
     {
@@ -39,7 +39,7 @@ const SKILLS = [
     },
     {
         category: "CODE://",
-        skills: "React, MySQL",
+        skills: "React, JavaScript, Node.js",
     },
 ];
 
@@ -52,7 +52,7 @@ function CollectionsSection() {
 
     return (
         <>
-            <section className="min-h-[80vh] bg-white text-black px-6 py-12">
+            <section className="min-h-screen bg-white text-black px-6 py-12">
                 <div className="max-w-7xl mx-auto">
                     {/* Collections Section */}
                     <div>
@@ -78,7 +78,7 @@ function CollectionsSection() {
 
                     {/* Skills Section */}
                     <div>
-                        <h2 className="text-3xl md:text-3xl font-bold mb-6 tracking-wider">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-6 tracking-wider">
                             {">"} SKILLS
                         </h2>
 
