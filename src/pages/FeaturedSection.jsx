@@ -30,7 +30,10 @@ function FeaturedSection() {
 
     return (
         <>
-            <section className="min-h-screen bg-white text-black px-6 py-12">
+            <section
+                className="min-h-[80vh] bg-white text-black px-6 py-12"
+                data-section="featured"
+            >
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
                     <h2 className="text-2xl md:text-3xl font-bold mb-12 tracking-wider">
@@ -69,6 +72,7 @@ function FeaturedSection() {
 }
 
 function ProjectCard({ project, className, onClick }) {
+    const base = import.meta.env.BASE_URL;
     return (
         <div
             className={`
@@ -85,6 +89,17 @@ function ProjectCard({ project, className, onClick }) {
             aria-label={`View ${project.title} project details`}
         >
             <div className="absolute -bottom-2 -right-2 w-full h-full bg-black -z-10" />
+
+            <img
+                src={`${base}assets/svg/mem5.svg`}
+                alt=""
+                className="pointer-events-none absolute top-2 left-2 w-30 transition-all duration-200 group-hover:opacity-100 group-hover:-translate-y-0.5"
+            />
+            <img
+                src={`${base}assets/svg/mem4.svg`}
+                alt=""
+                className="pointer-events-none absolute bottom-2 right-2 w-10 transition-all duration-200 group-hover:opacity-100 group-hover:translate-y-0.5"
+            />
 
             <div className="p-6 h-full flex flex-col justify-between">
                 <div className="flex-1 flex items-center justify-center">

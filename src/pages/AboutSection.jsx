@@ -18,7 +18,10 @@ const SOCIAL_LINKS = [
 
 function AboutSection() {
     return (
-        <section className="min-h-screen bg-white text-black px-6 py-12">
+        <section
+            className="min-h-[80vh] bg-white text-black px-6 py-12 scroll-mt-24 md:scroll-mt-32"
+            data-section="about"
+        >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <h2 className="text-2xl md:text-3xl font-bold mb-12 tracking-wider">
@@ -41,7 +44,7 @@ function AboutSection() {
                             </p>
                         </div>
 
-                        <div className="space-y-4 text-base leading-relaxed">
+                        <div className="space-y-4 text-lg md:text-xl leading-relaxed">
                             <p>
                                 I’m a{" "}
                                 <strong>multidisciplinary creative</strong> who
@@ -114,11 +117,11 @@ function SocialLink({ link }) {
 
 function Footer() {
     return (
-        <footer className="pt-16 pb-8">
+        <footer className="pt-16">
             <div className="space-y-2">
                 <h4 className="text-lg font-bold">BUILT BY ME</h4>
                 <p className="text-sm text-gray-600 tracking-wider">
-                    TAILWIND | REACT | VITE
+                    TAILWIND | REACT
                 </p>
             </div>
         </footer>
