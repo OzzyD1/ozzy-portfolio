@@ -1,4 +1,4 @@
-import TypingAnimation from "./TypingAnimation";
+import TypingAnimation from "../components/TypingAnimation";
 
 const TYPING_WORDS = ["EXPERIENCES", "STORIES", "IMPRESSIONS", "SOLUTIONS"];
 
@@ -17,7 +17,7 @@ function HeroSection() {
                             </span>
                         </h1>
                         <p className="text-2xl md:text-3xl lg:text-4xl tracking-tighter">
-                            VISUAL | AUDIO | CODE
+                            A Multi-Disciplinary Designer
                         </p>
                     </div>
 

@@ -1,5 +1,5 @@
 import { useModal } from "../hooks/useModal";
-import Modal from "./Modal";
+import Modal from "../components/Modal";
 
 const PROJECTS = [
     {
@@ -16,27 +16,13 @@ const PROJECTS = [
         description: "ANIMATED EXPLAINER | MAP VISUALISATION",
         gridClass: "lg:col-span-2",
     },
-    // {
-    //     id: 3,
-    //     contentId: "chris-website",
-    //     title: "CHRIS'S WEBSITE",
-    //     description: "CLIENT PROJECT | WEB DEVELOPMENT",
-    //     gridClass: "lg:col-span-1",
-    // },
     {
-        id: 4,
+        id: 3,
         contentId: "andrew-film",
         title: "A DAY IN THE LIFE OF ANDREW",
         description: "DIRECTING | EDITING | VFX",
         gridClass: "lg:col-span-1",
     },
-    // {
-    //     id: 5,
-    //     contentId: "showreel",
-    //     title: "SHOWREEL",
-    //     description: "MOTION DESIGN | AFTER EFFECTS",
-    //     gridClass: "lg:col-span-1",
-    // },
 ];
 
 function FeaturedSection() {
