@@ -12,8 +12,8 @@ const PROJECTS = [
     {
         id: 2,
         contentId: "supply-chain",
-        title: "SUPPLY CHAIN",
-        description: "ANIMATED EXPLAINER | MAP VISUALISATION",
+        title: "MOVING PARTS",
+        description: "ANIMATED EXPLAINER | BUSINESS INTELLIGENCE",
         gridClass: "lg:col-span-2",
     },
     {

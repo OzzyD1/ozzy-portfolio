@@ -2,7 +2,7 @@ const SOCIAL_LINKS = [
     {
         id: 1,
         name: "CV",
-        url: "#",
+        url: "assets/documents/CV.pdf",
     },
     {
         id: 2,
@@ -40,7 +40,7 @@ function AboutSection() {
                             <p className="text-lg italic text-gray-600 mb-2">
                                 B.Sc (Hons) in Creative Computing
                             </p>
-                            <p className="text-lg italic text-gray-600">
+                            <p className="text-md italic text-gray-600">
                                 South East Technological University
                             </p>
                         </div>
@@ -48,24 +48,30 @@ function AboutSection() {
                         <div className="space-y-4 text-lg md:text-xl leading-relaxed">
                             <p>
                                 I’m a{" "}
-                                <strong>multidisciplinary creative</strong> who
-                                works across visual, audio, and code but what
+                                <strong>multidisciplinary creative</strong>{" "}
+                                working across visual, audio and code, but what
                                 drives me most is emotion.
                             </p>
 
                             <p>
-                                I build things that feel alive, from interactive
-                                short films and motion design explainers to
-                                music production and web experiences. Every
-                                project is an attempt to capture a feeling, a
-                                rhythm, or a moment.
+                                I create things that feel alive, from
+                                interactive short films and motion design
+                                explainers to music production and web
+                                experiences. Every project is an attempt to
+                                capture a feeling, a rhythm or a moment.
                             </p>
 
                             <p>
-                                Whether I’m shaping sound, crafting visuals, or
-                                writing code, my goal is the same: to make
-                                something that connects, not just functions —
-                                something with clarity, impact, and a pulse.
+                                Whether I’m shaping sound, crafting visuals or
+                                writing code, my goal is always the same: to
+                                make something that connects, not just
+                                functions; something with clarity, impact and a
+                                pulse.
+                            </p>
+
+                            <p>
+                                If you’ve got a story to tell, I’ll help you
+                                make people feel it.
                             </p>
                         </div>
 
@@ -86,16 +92,11 @@ function AboutSection() {
                                     border: "4px solid #2a2a2a",
                                 }}
                             >
-                                <div
-                                    className="absolute -bottom-2 -right-2 w-full h-full -z-10"
-                                    style={{
-                                        backgroundColor: "#2a2a2a",
-                                    }}
+                                <img
+                                    src="assets/images/MeAgainV2.png"
+                                    alt="Ozzy Domarkas profile photo"
+                                    className="w-full h-full object-cover"
                                 />
-                                {/* Placeholder for profile image */}
-                                <div className="w-full h-full flex items-center justify-center text-gray-500 text-lg">
-                                    [Profile Image]
-                                </div>
                             </div>
                         </div>
                     </div>

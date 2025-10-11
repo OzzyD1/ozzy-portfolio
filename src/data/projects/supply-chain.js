@@ -1,73 +1,62 @@
 export const supplyChainProject = {
     id: "supply-chain",
-    title: "SUPPLY CHAIN",
+    title: "MOVING PARTS",
     description: "CORPORATE EXPLAINER | BUSINESS INTELLIGENCE",
     overview: `
-        <p>A corporate explainer video created to educate internal teams and external stakeholders about how <strong>global disruptions impact the company's supply chain operations</strong>. This project demonstrates the intricate nature of international logistics and their direct business implications.</p>
-        <p>Developed as a <em>strategic communication tool</em> to help leadership, clients, and partners understand supply chain vulnerabilities and adaptive solutions in real-time.</p>
-    `,
+    <p><em>Moving Parts</em> is a corporate explainer video I produced during my time at KOSTAL, an international automotive company. The project aimed to visualise how global disruptions, such as extreme weather, piracy and the Suez Canal blockage can affect the delivery of parts from Asia to Ireland.</p>
+    <p>I designed, animated and narrated the piece myself, using <strong>After Effects</strong> to bring the logistics journey to life through a branded world map. The video highlighted real risks to production and explained how delays cascade through the supply chain.</p>
+    <p>The result was an engaging internal communication tool that combined research, storytelling and design to help teams better understand the realities of global logistics.</p>
+  `,
     year: "2024",
-    role: "Creative Lead, Business Analyst, Visual Designer",
-    technologies: [
-        "After Effects",
-        "Premiere Pro",
-        "Illustrator",
-        "Data Analysis",
-    ],
+    role: "Creative Lead, Researcher, Motion Designer",
+    technologies: ["After Effects", "Premiere Pro", "Illustrator", "Audition"],
     details: `
-        <div class="space-y-4">
-            <h3 class="text-xl font-bold mb-3">Business Objective</h3>
-            <ul class="space-y-2 ml-4">
-                <li>• <strong>Internal Education:</strong> Help teams understand supply chain complexity and impact</li>
-                <li>• <strong>Stakeholder Communication:</strong> Explain disruptions and mitigation strategies to clients</li>
-                <li>• <strong>Strategic Planning:</strong> Visualize alternative routing scenarios for decision-making</li>
-                <li>• <strong>Risk Management:</strong> Illustrate vulnerability points and contingency options</li>
-            </ul>
-            
-            <h3 class="text-xl font-bold mb-3 mt-6">Production & Research</h3>
-            <ul class="space-y-2 ml-4">
-                <li>• <strong>Data Analysis:</strong> Researched shipping routes, costs, and timeline impacts</li>
-                <li>• <strong>Stakeholder Interviews:</strong> Collaborated with logistics and operations teams</li>
-                <li>• <strong>Visual Strategy:</strong> Designed clear, executive-friendly data presentations</li>
-                <li>• <strong>Technical Execution:</strong> Created animated maps showing route alternatives</li>
-            </ul>
+    <h3 class="text-xl font-bold mb-3">Project Purpose</h3>
+    <ul class="space-y-3">
+      <li>• Visualise how international supply routes impact timelines and cost</li>
+      <li>• Communicate risks caused by real-world events in a clear, visual way</li>
+      <li>• Support internal education around logistics planning and resilience</li>
+      <li>• Strengthen cross-department awareness through accessible storytelling</li>
+    </ul>
 
-            
-            <h3 class="text-xl font-bold mb-3 mt-6">Key Insights Communicated</h3>
-            <ul class="space-y-2 ml-4">
-                <li>• How regional conflicts directly affect our delivery timelines</li>
-                <li>• Cost implications of rerouting through southern Africa</li>
-                <li>• Strategic advantages of diversified shipping partnerships</li>
-                <li>• Proactive measures to minimize client impact</li>
-            </ul>
-        </div>
-    `,
+    <h3 class="text-xl font-bold mb-3 mt-6">Research and Development</h3>
+    <p>
+      I spent several weeks researching global shipping routes and common risk factors. 
+      This included studying real piracy data, reviewing weather disruption reports and interviewing logistics staff at KOSTAL to ensure accuracy. 
+      The script was built around these insights to explain how each factor could affect travel time and costs.
+    </p>
+
+    <h3 class="text-xl font-bold mb-3 mt-6">Design and Production</h3>
+    <p>
+      Using <strong>After Effects</strong> and <strong>Illustrator</strong>, I created a stylised world map coloured to match corporate branding. 
+      I animated trade routes, aircraft paths and regional highlights to show the journey from Asia to Ireland. 
+      I also composited news headlines, storm visuals and piracy incidents to ground the story in real-world context. 
+      The final narration was recorded and mixed by me to maintain a cohesive tone throughout.
+    </p>
+
+    <h3 class="text-xl font-bold mb-3 mt-6">Reflection</h3>
+    <p>
+      This was my final project before returning to college and one of the most ambitious videos I produced. 
+      It required extensive research, technical layering and clear communication to turn a complex topic into something people could easily follow. 
+      I was proud of how it balanced factual accuracy with visual storytelling, showing that even corporate content can have style and emotion.
+    </p>
+  `,
     gallery: `
-        <div class="space-y-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="aspect-video bg-gray-300 border-4 border-black relative">
-                    <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                    <div class="w-full h-full flex items-center justify-center text-gray-500">
-                        [Route Comparison Dashboard]
-                    </div>
-                </div>
-                <div class="aspect-video bg-gray-300 border-4 border-black relative">
-                    <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                    <div class="w-full h-full flex items-center justify-center text-gray-500">
-                        [Cost Impact Visualization]
-                    </div>
-                </div>
-            </div>
-            <div class="aspect-video bg-gray-300 border-4 border-black relative">
-                <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Strategic Timeline View]
-                </div>
-            </div>
-        </div>
-    `,
-    links: {
-        demo: "#",
-        behance: "#",
-    },
+    <div class="w-full">
+      <div class="aspect-video bg-gray-300 border-4 border-black relative overflow-hidden">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <iframe 
+          width="100%" 
+          height="100%" 
+          src="https://www.youtube.com/embed/LCyXbGYTMe4?si=uRxeC0c2P_ekItmO" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen
+          class="absolute inset-0"
+        ></iframe>
+      </div>
+    </div>
+  `,
 };
