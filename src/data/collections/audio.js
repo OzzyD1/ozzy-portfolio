@@ -38,8 +38,7 @@ export const audioCollection = {
         <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
         <h4 class="font-bold mb-3 tracking-wider">RADIO MASHUP</h4>
         <audio controls class="w-full">
-          <source src="assets/sound/mashup.flac" type="audio/flac">
-          <source src="assets/sound/mashup.flac" type="audio/mpeg">
+          <source src="assets/sound/mashup.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -48,8 +47,7 @@ export const audioCollection = {
         <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
         <h4 class="font-bold mb-3 tracking-wider">TFI AWARDS ENTRY - VOICE OVER</h4>
         <audio controls class="w-full">
-          <source src="assets/sound/tfi.flac" type="audio/flac">
-          <source src="assets/sound/tfi.flac" type="audio/mpeg">
+          <source src="assets/sound/tfi.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -58,8 +56,7 @@ export const audioCollection = {
         <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
         <h4 class="font-bold mb-3 tracking-wider">UNIVERSITY VOLUNTEERING - VOICE OVER</h4>
         <audio controls class="w-full">
-          <source src="assets/sound/volunteering.flac" type="audio/flac">
-          <source src="assets/sound/volunteering.flac" type="audio/mpeg">
+          <source src="assets/sound/volunteering.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -68,7 +65,7 @@ export const audioCollection = {
         <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
         <h4 class="font-bold mb-3 tracking-wider">2600 - ORIGINAL TRACK</h4>
         <audio controls class="w-full">
-          <source src="assets/sound/2600.wav" type="audio/wav">
+          <source src="assets/sound/2600.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -77,20 +74,19 @@ export const audioCollection = {
         <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
         <h4 class="font-bold mb-3 tracking-wider">CHAMBER - ORIGINAL TRACK</h4>
         <audio controls class="w-full">
-          <source src="assets/sound/Chamber.wav" type="audio/wav">
+          <source src="assets/sound/Chamber.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
-
 
       <div class="bg-gray-100 border-4 border-black relative p-6">
         <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
         <h4 class="font-bold mb-3 tracking-wider">RACING GAME MENU SONG</h4>
         <audio controls class="w-full">
-          <source src="assets/sound/Racing Game Menu Song.wav" type="audio/wav">
+          <source src="assets/sound/Racing Game Menu Song.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
     </div>
-  `,
+    `,
 };
