@@ -5,7 +5,7 @@ import AboutSection from "./pages/AboutSection";
 
 function App() {
     return (
-        <div className="bg-white text-black">
+        <div style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}>
             <HeroSection />
             <FeaturedSection />
             <CollectionsSection />

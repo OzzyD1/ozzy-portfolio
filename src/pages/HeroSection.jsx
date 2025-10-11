@@ -9,7 +9,10 @@ function HeroSection() {
     };
 
     return (
-        <div className="min-h-screen relative overflow-hidden bg-white text-black">
+        <div
+            className="min-h-screen relative overflow-hidden"
+            style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+        >
             <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center relative">
                 {/* Top label */}
                 <div className="tracking-widest text-xs md:text-sm uppercase mb-6 opacity-80">
@@ -20,7 +23,7 @@ function HeroSection() {
                 <div className="space-y-6">
                     <div>
                         <h1 className="mb-3 text-7xl md:text-8xl lg:text-[7.5rem] leading-none">
-                            <span className="font-light tracking-tighter">
+                            <span className="mb-3 text-4xl md:text-5xl lg:text-[4rem] font-light tracking-tighter">
                                 I&apos;M{" "}
                             </span>
                             <span className="font-extrabold tracking-tight">
@@ -30,9 +33,18 @@ function HeroSection() {
 
                         {/* Memphis underline */}
                         <div className="mx-auto mt-4 flex items-center justify-center gap-2">
-                            <div className="h-1 w-24 bg-black" />
-                            <div className="h-1 w-6 bg-black rotate-45" />
-                            <div className="h-1 w-24 bg-black" />
+                            <div
+                                className="h-1 w-24"
+                                style={{ backgroundColor: "#2a2a2a" }}
+                            />
+                            <div
+                                className="h-1 w-6 rotate-45"
+                                style={{ backgroundColor: "#2a2a2a" }}
+                            />
+                            <div
+                                className="h-1 w-24"
+                                style={{ backgroundColor: "#2a2a2a" }}
+                            />
                         </div>
 
                         <p className="mt-6 text-xl md:text-2xl lg:text-3xl tracking-widest uppercase">
@@ -84,7 +96,7 @@ function HeroSection() {
                             aria-hidden="true"
                         >
                             {/* Solid triangle pointing down */}
-                            <path d="M12 18L3 6h18L12 18z" fill="black" />
+                            <path d="M12 18L3 6h18L12 18z" fill="#2a2a2a" />
                         </svg>
                     </button>
                 </div>

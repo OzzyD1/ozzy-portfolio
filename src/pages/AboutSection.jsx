@@ -19,8 +19,9 @@ const SOCIAL_LINKS = [
 function AboutSection() {
     return (
         <section
-            className="min-h-[80vh] bg-white text-black px-6 py-12 scroll-mt-24 md:scroll-mt-32"
+            className="min-h-[80vh] px-6 py-12 scroll-mt-24 md:scroll-mt-32"
             data-section="about"
+            style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
         >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
@@ -79,8 +80,18 @@ function AboutSection() {
                     {/* Right Column - Profile Image */}
                     <div className="flex justify-center lg:justify-end">
                         <div className="w-full max-w-md">
-                            <div className="aspect-[4/5] bg-gray-300 border-4 border-black relative">
-                                <div className="absolute -bottom-2 -right-2 w-full h-full bg-black -z-10" />
+                            <div
+                                className="aspect-[4/5] bg-gray-300 relative"
+                                style={{
+                                    border: "4px solid #2a2a2a",
+                                }}
+                            >
+                                <div
+                                    className="absolute -bottom-2 -right-2 w-full h-full -z-10"
+                                    style={{
+                                        backgroundColor: "#2a2a2a",
+                                    }}
+                                />
                                 {/* Placeholder for profile image */}
                                 <div className="w-full h-full flex items-center justify-center text-gray-500 text-lg">
                                     [Profile Image]
@@ -102,14 +113,30 @@ function SocialLink({ link }) {
         <a
             href={link.url}
             className="
-                border-4 border-black bg-white
                 px-4 py-3 text-center font-bold
                 cursor-pointer transition-all duration-200
-                hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
+                focus:outline-none focus:ring-2 focus:ring-offset-2
                 relative block
             "
+            style={{
+                border: "4px solid #2a2a2a",
+                backgroundColor: "#f5f2eb",
+                boxShadow: "0 0 0 0 rgba(42, 42, 42, 1)",
+            }}
+            onMouseEnter={(e) => {
+                e.target.style.boxShadow =
+                    "4px 4px 0px 0px rgba(42, 42, 42, 1)";
+            }}
+            onMouseLeave={(e) => {
+                e.target.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
+            }}
         >
-            <div className="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10" />
+            <div
+                className="absolute -bottom-1 -right-1 w-full h-full -z-10"
+                style={{
+                    backgroundColor: "#2a2a2a",
+                }}
+            />
             {link.name}
         </a>
     );

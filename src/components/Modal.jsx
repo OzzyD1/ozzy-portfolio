@@ -44,13 +44,23 @@ function Modal({ content, isOpen, onClose, type = "project" }) {
             aria-labelledby="modal-title"
         >
             <div
-                className="fixed inset-0 bg-black bg-opacity-50"
+                className="fixed inset-0 bg-opacity-50"
+                style={{ backgroundColor: "rgba(42, 42, 42, 0.5)" }}
                 onClick={handleBackdropClick}
                 aria-hidden="true"
             />
 
-            <div className="relative w-full h-full max-w-6xl max-h-[90vh] bg-white border-4 border-black overflow-hidden">
-                <div className="absolute -bottom-2 -right-2 w-full h-full bg-black -z-10" />
+            <div
+                className="relative w-full h-full max-w-6xl max-h-[90vh] overflow-hidden"
+                style={{
+                    backgroundColor: "#f5f2eb",
+                    border: "4px solid #2a2a2a",
+                }}
+            >
+                <div
+                    className="absolute -bottom-2 -right-2 w-full h-full -z-10"
+                    style={{ backgroundColor: "#2a2a2a" }}
+                />
 
                 <ModalHeader content={content} onClose={onClose} />
                 <ModalContent content={content} type={type} />
@@ -61,7 +71,14 @@ function Modal({ content, isOpen, onClose, type = "project" }) {
 
 function ModalHeader({ content, onClose }) {
     return (
-        <div className="flex justify-between items-center p-6 border-b-4 border-black bg-white">
+        <div
+            className="flex justify-between items-center p-6"
+            style={{
+                borderBottom: "4px solid #2a2a2a",
+                backgroundColor: "#f5f2eb",
+                color: "#2a2a2a",
+            }}
+        >
             <div>
                 <h1
                     id="modal-title"
@@ -75,7 +92,8 @@ function ModalHeader({ content, onClose }) {
             </div>
             <button
                 onClick={onClose}
-                className="text-4xl font-bold hover:bg-gray-100 px-4 py-2 transition-colors rounded focus:outline-none focus:ring-2 focus:ring-black"
+                className="text-4xl font-bold hover:bg-gray-100 px-4 py-2 transition-colors rounded focus:outline-none focus:ring-2"
+                style={{ color: "#2a2a2a" }}
                 aria-label="Close modal"
             >
                 ×
@@ -86,7 +104,10 @@ function ModalHeader({ content, onClose }) {
 
 function ModalContent({ content, type }) {
     return (
-        <div className="h-full overflow-y-auto pb-20 bg-white">
+        <div
+            className="h-full overflow-y-auto pb-20"
+            style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+        >
             <div className="p-6 space-y-8">
                 {content.overview && (
                     <ContentSection
@@ -183,15 +204,29 @@ function LinkButton({ type, url }) {
             target="_blank"
             rel="noopener noreferrer"
             className="
-                border-4 border-black bg-white
                 px-4 py-2 font-bold uppercase
                 cursor-pointer transition-all duration-200
-                hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]
-                focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2
+                focus:outline-none focus:ring-2 focus:ring-offset-2
                 relative inline-block
             "
+            style={{
+                border: "4px solid #2a2a2a",
+                backgroundColor: "#f5f2eb",
+                color: "#2a2a2a",
+                boxShadow: "0 0 0 0 rgba(42, 42, 42, 1)",
+            }}
+            onMouseEnter={(e) => {
+                e.target.style.boxShadow =
+                    "4px 4px 0px 0px rgba(42, 42, 42, 1)";
+            }}
+            onMouseLeave={(e) => {
+                e.target.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
+            }}
         >
-            <div className="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10" />
+            <div
+                className="absolute -bottom-1 -right-1 w-full h-full -z-10"
+                style={{ backgroundColor: "#2a2a2a" }}
+            />
             {type}
         </a>
     );

@@ -52,7 +52,10 @@ function CollectionsSection() {
 
     return (
         <>
-            <section className="min-h-[80vh] bg-white text-black px-6 py-12">
+            <section
+                className="min-h-[70vh] px-6 py-12"
+                style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+            >
                 <div className="max-w-7xl mx-auto">
                     {/* Collections Section */}
                     <div>
@@ -117,17 +120,33 @@ function CollectionCard({ item, onClick }) {
     return (
         <div
             className={`
-                border-4 border-black bg-white
                 aspect-square flex items-center justify-center
                 transition-all duration-200 group
-                hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]
                 relative
                 ${
                     item.contentId
-                        ? "cursor-pointer focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                        ? "cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2"
                         : "cursor-default opacity-75"
                 }
             `}
+            style={{
+                border: "4px solid #2a2a2a",
+                backgroundColor: "#f5f2eb",
+                boxShadow: item.contentId
+                    ? "0 0 0 0 rgba(42, 42, 42, 1)"
+                    : "none",
+            }}
+            onMouseEnter={(e) => {
+                if (item.contentId) {
+                    e.target.style.boxShadow =
+                        "8px 8px 0px 0px rgba(42, 42, 42, 1)";
+                }
+            }}
+            onMouseLeave={(e) => {
+                if (item.contentId) {
+                    e.target.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
+                }
+            }}
             onClick={handleClick}
             onKeyDown={handleKeyDown}
             tabIndex={item.contentId ? 0 : -1}
@@ -136,7 +155,10 @@ function CollectionCard({ item, onClick }) {
                 item.contentId ? `View ${item.title} collection` : undefined
             }
         >
-            <div className="absolute -bottom-2 -right-2 w-full h-full bg-black -z-10" />
+            <div
+                className="absolute -bottom-2 -right-2 w-full h-full -z-10"
+                style={{ backgroundColor: "#2a2a2a" }}
+            />
 
             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-center tracking-wider p-4">
                 {item.title}

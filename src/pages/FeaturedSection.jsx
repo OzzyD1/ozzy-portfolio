@@ -31,8 +31,9 @@ function FeaturedSection() {
     return (
         <>
             <section
-                className="min-h-[80vh] bg-white text-black px-6 py-12"
+                className="min-h-[80vh] px-6 py-12"
                 data-section="featured"
+                style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
             >
                 <div className="max-w-7xl mx-auto">
                     {/* Section Header */}
@@ -76,19 +77,33 @@ function ProjectCard({ project, className, onClick }) {
     return (
         <div
             className={`
-                relative border-4 border-black bg-white cursor-pointer
+                relative cursor-pointer
                 transition-all duration-200 group
-                hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]
-                focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2
+                focus:outline-none focus:ring-2 focus:ring-offset-2
                 ${className}
             `}
+            style={{
+                border: "4px solid #2a2a2a",
+                backgroundColor: "#f5f2eb",
+                boxShadow: "0 0 0 0 rgba(42, 42, 42, 1)",
+            }}
+            onMouseEnter={(e) => {
+                e.target.style.boxShadow =
+                    "8px 8px 0px 0px rgba(42, 42, 42, 1)";
+            }}
+            onMouseLeave={(e) => {
+                e.target.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
+            }}
             onClick={onClick}
             onKeyDown={(e) => e.key === "Enter" && onClick()}
             tabIndex={0}
             role="button"
             aria-label={`View ${project.title} project details`}
         >
-            <div className="absolute -bottom-2 -right-2 w-full h-full bg-black -z-10" />
+            <div
+                className="absolute -bottom-2 -right-2 w-full h-full -z-10"
+                style={{ backgroundColor: "#2a2a2a" }}
+            />
 
             <img
                 src={`${base}assets/svg/mem5.svg`}
