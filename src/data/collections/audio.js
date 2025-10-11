@@ -1,91 +1,96 @@
 export const audioCollection = {
     id: "audio",
-    title: "Audio",
-    description: "Music Production & Sound Design",
+    title: "AUDIO",
+    description: "SOUND DESIGN | MIXING | VOICE OVER",
     overview: `
-        <p>A diverse collection of audio work including <strong>original music production</strong>, <strong>sound design for media</strong>, and <strong>audio post-production</strong>. Each piece demonstrates technical proficiency and creative musicality.</p>
-        <p>My approach to audio combines <em>traditional music theory</em> with <em>modern production techniques</em>, creating soundscapes that enhance and elevate visual content.</p>
-        <p>From electronic compositions to orchestral arrangements, I work across genres to find the perfect sonic solution for each project.</p>
-    `,
+    <p>This collection covers my audio work — from sound design and mixing to the occasional music production project. 
+    I’m not a full-time musician, but I’ve developed a strong technical understanding of sound and how it can shape emotion and rhythm in any medium.</p>
+    <p>I enjoy crafting soundscapes that complement visuals, writing scripts for voice-over projects, and fine-tuning mixes until they feel balanced and alive. 
+    One of my voice-over projects was shortlisted as a finalist for the <strong>TFI Smarter Travel Awards</strong>, which was a proud moment for me.</p>
+    <p>My focus is always on clarity and tone — making audio that enhances the story rather than distracts from it. 
+    I’ve also produced mashups, ambient pieces, and short musical ideas simply for the fun of experimenting with sound.</p>
+  `,
     details: `
-        <h3 class="text-xl font-bold mb-3">Audio Specializations</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div>
-                <h4 class="font-bold mb-2">Music Production</h4>
-                <ul class="space-y-1">
-                    <li>• Electronic & Ambient Compositions</li>
-                    <li>• Film & Video Game Scoring</li>
-                    <li>• Commercial Jingles & Themes</li>
-                    <li>• Podcast Intro & Outro Music</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-2">Sound Design</h4>
-                <ul class="space-y-1">
-                    <li>• Foley & Atmospheric Sounds</li>
-                    <li>• UI/UX Audio Feedback</li>
-                    <li>• Motion Graphics Sound Design</li>
-                    <li>• Interactive Audio Systems</li>
-                </ul>
-            </div>
-        </div>
-        
-        <h3 class="text-xl font-bold mb-3">Featured Projects</h3>
-        <ul class="space-y-2">
-            <li>• <strong>Synapse Game Audio</strong> - Dynamic soundtrack and SFX</li>
-            <li>• <strong>Corporate Brand Theme</strong> - Audio identity for tech company</li>
-            <li>• <strong>Ambient Album "Reflections"</strong> - 8-track personal release</li>
-            <li>• <strong>Podcast Production</strong> - Full audio post-production service</li>
-        </ul>
-        
-        <h3 class="text-xl font-bold mb-3 mt-6">Technical Setup</h3>
-        <p><strong>DAW:</strong> Ableton Live, Logic Pro, Pro Tools<br>
-        <strong>Plugins:</strong> Native Instruments, FabFilter, Soundtoys<br>
-        <strong>Hardware:</strong> MIDI controllers, audio interfaces, studio monitors<br>
-        <strong>Field Recording:</strong> Portable recorders, shotgun mics, contact mics</p>
-    `,
+    <h3 class="text-xl font-bold mb-3">Areas of Focus</h3>
+    <ul class="space-y-2 ml-4">
+      <li>• <strong>Sound Design:</strong> Creating clean, impactful soundscapes for motion design, video, and interactive projects</li>
+      <li>• <strong>Mixing & Mastering:</strong> Ensuring clarity, depth, and presence across different types of audio</li>
+      <li>• <strong>Voice Over:</strong> Writing clear, natural scripts and editing performances for rhythm and tone</li>
+      <li>• <strong>Music Production:</strong> Producing short compositions, mashups, and background tracks for creative work</li>
+    </ul>
+
+    <h3 class="text-xl font-bold mb-3 mt-6">Tools & Workflow</h3>
+    <ul class="space-y-2 ml-4">
+      <li>• <strong>DAWs:</strong> Ableton Live, Adobe Audition</li>
+      <li>• <strong>Techniques:</strong> Layered mixing, EQ sculpting, mastering, field recording</li>
+      <li>• <strong>Applications:</strong> Video post-production, motion design, and interactive audio feedback</li>
+    </ul>
+
+    <h3 class="text-xl font-bold mb-3 mt-6">Creative Approach</h3>
+    <p>
+      I see audio as the emotional glue of any project. Whether it’s subtle UI feedback, ambient sound for a film, or a short music cue, 
+      I try to make every sound purposeful. Having a good ear helps me bridge sound and visuals — finding harmony between what’s seen and what’s felt.
+    </p>
+  `,
     gallery: `
-        <div class="space-y-4">
-            <div class="aspect-video bg-gray-300 border-4 border-black relative">
-                <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Studio Setup & Workflow]
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="aspect-video bg-gray-300 border-4 border-black relative">
-                    <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                    <div class="w-full h-full flex items-center justify-center text-gray-500">
-                        [Waveform Visualization]
-                    </div>
-                </div>
-                <div class="aspect-video bg-gray-300 border-4 border-black relative">
-                    <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                    <div class="w-full h-full flex items-center justify-center text-gray-500">
-                        [Audio Mixing Interface]
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="aspect-square bg-gray-300 border-4 border-black relative">
-                    <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                    <div class="w-full h-full flex items-center justify-center text-gray-500">
-                        [Album Cover Art]
-                    </div>
-                </div>
-                <div class="aspect-square bg-gray-300 border-4 border-black relative">
-                    <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                    <div class="w-full h-full flex items-center justify-center text-gray-500">
-                        [Sound Design Tools]
-                    </div>
-                </div>
-                <div class="aspect-square bg-gray-300 border-4 border-black relative">
-                    <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                    <div class="w-full h-full flex items-center justify-center text-gray-500">
-                        [Field Recording Session]
-                    </div>
-                </div>
-            </div>
-        </div>
-    `,
+    <div class="space-y-6">
+      <div class="bg-gray-100 border-4 border-black relative p-6">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <h4 class="font-bold mb-3 tracking-wider">RADIO MASHUP</h4>
+        <audio controls class="w-full">
+          <source src="assets/sound/mashup.flac" type="audio/flac">
+          <source src="assets/sound/mashup.flac" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      
+      <div class="bg-gray-100 border-4 border-black relative p-6">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <h4 class="font-bold mb-3 tracking-wider">TFI AWARDS ENTRY - VOICE OVER</h4>
+        <audio controls class="w-full">
+          <source src="assets/sound/tfi.flac" type="audio/flac">
+          <source src="assets/sound/tfi.flac" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      
+      <div class="bg-gray-100 border-4 border-black relative p-6">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <h4 class="font-bold mb-3 tracking-wider">UNIVERSITY VOLUNTEERING - VOICE OVER</h4>
+        <audio controls class="w-full">
+          <source src="assets/sound/volunteering.flac" type="audio/flac">
+          <source src="assets/sound/volunteering.flac" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="bg-gray-100 border-4 border-black relative p-6">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <h4 class="font-bold mb-3 tracking-wider">2600 - ORIGINAL TRACK</h4>
+        <audio controls class="w-full">
+          <source src="assets/sound/2600.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="bg-gray-100 border-4 border-black relative p-6">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <h4 class="font-bold mb-3 tracking-wider">CHAMBER - ORIGINAL TRACK</h4>
+        <audio controls class="w-full">
+          <source src="assets/sound/Chamber.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+
+      <div class="bg-gray-100 border-4 border-black relative p-6">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <h4 class="font-bold mb-3 tracking-wider">RACING GAME MENU SONG</h4>
+        <audio controls class="w-full">
+          <source src="assets/sound/Racing Game Menu Song.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  `,
 };
