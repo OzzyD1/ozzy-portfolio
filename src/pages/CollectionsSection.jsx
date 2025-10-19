@@ -3,27 +3,21 @@ import Modal from "../components/Modal";
 
 const COLLECTIONS = [
     {
-        id: 1,
-        contentId: "motion",
-        title: "MOTION",
-        gridClass: "col-span-1",
-    },
-    {
         id: 2,
         contentId: "web",
-        title: "WEB",
+        title: "[ WEB ]",
         gridClass: "col-span-1",
     },
     {
         id: 3,
         contentId: "designs",
-        title: "DESIGNS",
+        title: "[ DESIGNS ]",
         gridClass: "col-span-1",
     },
     {
         id: 4,
         contentId: "audio",
-        title: "AUDIO",
+        title: "[ AUDIO ]",
         gridClass: "col-span-1",
     },
 ];
@@ -63,7 +57,7 @@ function CollectionsSection() {
                             {">"} COLLECTIONS
                         </h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                             {COLLECTIONS.map((item) => (
                                 <div key={item.id} className={item.gridClass}>
                                     <CollectionCard

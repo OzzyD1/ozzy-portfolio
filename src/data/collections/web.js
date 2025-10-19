@@ -6,7 +6,8 @@ export const webCollection = {
     <p>I design and build websites that are clean, expressive and human. My focus is on creating digital spaces that feel alive, not just functional but personal and visually engaging.</p>
     <p>Each project is a chance to experiment with colour, layout and movement. I like trying new ideas rather than following trends, exploring how design and interaction can make a website feel unique and memorable.</p>
     <p>Having grown up online for over 15 years, web design feels natural to me. I’ve always enjoyed shaping how things look and behave, from hand-coding small sites to building full experiences in React.</p>
-    <p>The thumbnails below are clickable and will bring you to each live website.</p>
+    <br>
+    <p><em>The thumbnails below are clickable and will bring you to each live website.</em></p>
   `,
     details: `
     <h3 class="text-xl font-bold mb-3">Design Philosophy</h3>

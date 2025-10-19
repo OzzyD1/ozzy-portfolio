@@ -1,80 +1,78 @@
 export const designsCollection = {
     id: "designs",
-    title: "Designs",
-    description: "Graphic Design & Visual Identity",
+    title: "DESIGNS",
+    description: "Graphic Design, Typography & Visual Systems",
     overview: `
-        <p>A curated collection of graphic design work spanning <strong>brand identity</strong>, <strong>print design</strong>, and <strong>digital graphics</strong>. Each project focuses on clear communication through thoughtful typography and visual hierarchy.</p>
-        <p>My design philosophy centers on <em>minimalism with purpose</em> - every element serves a function while contributing to the overall aesthetic vision.</p>
-        <p>From corporate branding to experimental posters, I approach each project with <strong>strategic thinking</strong> and <strong>creative problem-solving</strong>.</p>
-    `,
+    <p>This collection showcases my approach to <strong>bold, idea-driven design</strong>, from typographic posters and branding to motion and print layouts. 
+    I’m drawn to <em>brutalism, strong geometry and clarity through structure</em>.</p>
+    <p>I often use type as the main design element, letting composition, rhythm and contrast do the storytelling. 
+    My work blends <strong>digital precision</strong> with <strong>analogue texture</strong>, borrowing from architecture, retro-futurism and automotive design to create visuals that feel both functional and expressive.</p>
+    <p>Whether it’s a campaign, poster, or publication, I design with a focus on <strong>impact, balance, and intent</strong> — minimalism with an edge.</p>
+  `,
     details: `
-        <h3 class="text-xl font-bold mb-3">Design Specializations</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div>
-                <h4 class="font-bold mb-2">Brand Identity</h4>
-                <ul class="space-y-1">
-                    <li>• Logo Design & Development</li>
-                    <li>• Brand Guidelines & Systems</li>
-                    <li>• Typography & Color Palettes</li>
-                    <li>• Business Card & Stationery</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-2">Print & Digital</h4>
-                <ul class="space-y-1">
-                    <li>• Poster & Advertisement Design</li>
-                    <li>• Magazine & Publication Layout</li>
-                    <li>• Social Media Graphics</li>
-                    <li>• Packaging & Product Design</li>
-                </ul>
-            </div>
-        </div>
-        
-        <h3 class="text-xl font-bold mb-3">Featured Projects</h3>
-        <ul class="space-y-2">
-            <li>• <strong>Tech Startup Rebrand</strong> - Complete visual identity overhaul</li>
-            <li>• <strong>Music Festival Poster Series</strong> - Event marketing materials</li>
-            <li>• <strong>Restaurant Menu Design</strong> - Print and digital menu system</li>
-            <li>• <strong>Annual Report Layout</strong> - 60-page corporate publication</li>
-        </ul>
-        
-        <h3 class="text-xl font-bold mb-3 mt-6">Design Tools</h3>
-        <p><strong>Adobe Creative Suite:</strong> Illustrator, Photoshop, InDesign<br>
-        <strong>Digital Tools:</strong> Figma, Sketch, Procreate<br>
-        <strong>Traditional:</strong> Hand lettering, sketching, concept development</p>
-    `,
+    <h3 class="text-xl font-bold mb-3 mt-6">Featured Work</h3>
+    <ul class="space-y-2 ml-4">
+      <li>• <strong>Synapse Poster:</strong> Promotional artwork for my interactive short film, inspired by cyberpunk and neuromedia themes</li>
+      <li>• <strong>Helvetica Anatomy:</strong> Educational typographic poster exploring the anatomy and legacy of Helvetica</li>
+      <li>• <strong>SETU Karting Club:</strong> Brand visuals and event posters for the student racing society</li>
+      <li>• <strong>Valparaíso Street Art:</strong> Visual identity and logo design for an art and culture project</li>
+      <li>• <strong>Retro Futurism Collage:</strong> Digital composition blending mid-century sci-fi and computing nostalgia</li>
+      <li>• <strong>Pit Stop Campaign:</strong> Internal corporate poster using motorsport visuals to promote innovation</li>
+      <li>• <strong>Mario Kart Fundraiser:</strong> Event poster design combining nostalgia and vibrant motion</li>
+    </ul>
+    <h3 class="text-xl font-bold mb-3">Design Focus</h3>
+    <ul class="space-y-2 ml-4">
+      <li>• <strong>Typography:</strong> Expressive use of letterforms, grids, and hierarchy as core design language</li>
+      <li>• <strong>Editorial & Poster Design:</strong> Strong layouts inspired by Swiss design and brutalist architecture</li>
+      <li>• <strong>Brand Identity:</strong> Simple, adaptable visual systems that feel timeless yet distinct</li>
+      <li>• <strong>Experimental Work:</strong> Retro-futurist and motion-inspired pieces exploring form and texture</li>
+    </ul>
+    <h3 class="text-xl font-bold mb-3 mt-6">Tools & Process</h3>
+    <ul class="space-y-2 ml-4">
+      <li>• <strong>Software:</strong> Adobe Illustrator, Photoshop, InDesign, After Effects, Figma</li>
+      <li>• <strong>Approach:</strong> Grids, modular systems, and typographic precision</li>
+      <li>• <strong>Influences:</strong> Architecture, automotive design, Swiss typography and brutalist principles</li>
+      <li>• <strong>Style:</strong> Clean structures with expressive use of colour, texture and form</li>
+    </ul>
+  `,
     gallery: `
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="aspect-square bg-gray-300 border-4 border-black relative">
-                <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Brand Identity System]
-                </div>
-            </div>
-            <div class="aspect-square bg-gray-300 border-4 border-black relative">
-                <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Poster Design Series]
-                </div>
-            </div>
-            <div class="aspect-video bg-gray-300 border-4 border-black relative md:col-span-2">
-                <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Publication Layout Spread]
-                </div>
-            </div>
-            <div class="aspect-square bg-gray-300 border-4 border-black relative">
-                <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Logo Collection]
-                </div>
-            </div>
-            <div class="aspect-square bg-gray-300 border-4 border-black relative">
-                <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    [Packaging Design]
-                </div>
-            </div>
-        </div>
-    `,
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 210/297;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/fypposter.jpg" alt="Synapse Poster" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 210/297;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/helvetica.jpg" alt="Helvetica Typography Poster" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 210/297;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/kartingclub.jpg" alt="Karting Club Design" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 4/3;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/retrofuturism.jpg" alt="Retro Futurism Collage" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 297/210;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/pitstop.jpg" alt="Pit Stop Campaign Poster" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 297/210;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/valp.jpg" alt="Valparaiso Street Art Logo Design" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 297/210;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/mariofund.jpg" alt="Mario Kart Fundraiser Poster" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 297/210;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/kposter1.jpg" alt="K Poster 1" class="w-full h-full object-contain" />
+      </div>
+      <div class="bg-gray-300 border-4 border-black relative overflow-hidden" style="aspect-ratio: 297/210;">
+        <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
+        <img src="assets/images/designs/kposter2.jpg" alt="K Poster 2" class="w-full h-full object-contain" />
+      </div>
+    </div>
+  `,
 };
