@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.35 80.19">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: square;
+        stroke-linejoin: bevel;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Mono45Headline-Bold, 'Mono45 Headline';
+        font-size: 72px;
+        font-weight: 700;
+        letter-spacing: -.09em;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-2" transform="translate(1 61.77)"><tspan x="0" y="0">O</tspan></text>
+      <text class="cls-1" transform="translate(27.67 61.77)"><tspan x="0" y="0">D</tspan></text>
+    </g>
+  </g>
+</svg>
