@@ -45,17 +45,7 @@ export const supplyChainProject = {
     <div class="w-full">
       <div class="aspect-video bg-gray-300 border-4 border-black relative overflow-hidden">
         <div class="absolute -bottom-1 -right-1 w-full h-full bg-black -z-10"></div>
-        <iframe 
-          width="100%" 
-          height="100%" 
-          src="https://www.youtube.com/embed/LCyXbGYTMe4?si=uRxeC0c2P_ekItmO" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen
-          class="absolute inset-0"
-        ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJqxHJF6HB8?si=5-dEJM7aWEOEGw5X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   `,
